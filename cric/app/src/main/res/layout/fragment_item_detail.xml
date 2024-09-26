@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivItem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/img_car"
+        tools:layout_editor_absoluteX="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#3C000000"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ibLike"
+        android:layout_width="55.00dp"
+        android:layout_height="55.00dp"
+        android:background="@drawable/shape_circle"
+        android:backgroundTint="#DCD9D9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/sel_like"
+        android:scaleType="centerInside"
+    />
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ibShare"
+        android:layout_width="55.00dp"
+        android:layout_height="55.00dp"
+        android:background="@drawable/shape_circle"
+        android:backgroundTint="#DCD9D9"
+        app:layout_constraintEnd_toStartOf="@id/ibLike"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        android:src="@drawable/vc_share"
+        android:scaleType="centerInside"
+        android:layout_marginEnd="16.00dp"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
